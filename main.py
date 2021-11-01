@@ -1,5 +1,5 @@
-from TradeItem import TradeItem
-from Buyers import Buyers
+from tradeitem import TradeItem
+from buyers import Buyers
 from orders import Orders
 
 item = []
@@ -12,7 +12,7 @@ item.append(TradeItem(2, "TEFAL OptiGrill + Initial GC706",
 
 # добавляем покупателя
 buyer = []
-buyer.append(Buyers(1, "Thomas", "Anderson", "+380503127023", "ave. Bright future 1"))
+buyer.append(Buyers(1, "thomas", "anderson", "+380503127023", "ave. Bright future 1"))
 
 # добавляем позиции товаров в заказанные позиции
 ordered_items = []

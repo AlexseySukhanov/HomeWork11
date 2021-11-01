@@ -1,5 +1,10 @@
-class TradeItem():
+class TradeItem:
     def __init__(self, item_id, item_name, description, price, length, height, depth, weight):
+        if not isinstance(price, (int,float)):
+            raise TypeError(f'{type(price).__name__} priсe is not valid')
+        if price <= 0:
+            raise ValueError("Price can't be less or equal to zero")
+
         self.item_id = item_id
         self.item_name = item_name
         self.description = description
