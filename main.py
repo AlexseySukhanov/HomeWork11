@@ -20,7 +20,12 @@ ordered_items.append(item[0])
 ordered_items.append(item[1])
 
 # формируем заказ
-order = []
-order.append(Orders(1, buyer[0], ordered_items))
 
-print(order[0])
+order = Orders(1, buyer[0], ordered_items)
+
+print(order)
+
+for i in order:
+    print(i)
+
+
